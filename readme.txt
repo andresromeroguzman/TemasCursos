@@ -1,0 +1,1 @@
+$listaCursos=$consulta->fetchAll(); Debe coincidir con el $listaCursos del foreach de vista_cursos
