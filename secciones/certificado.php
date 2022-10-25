@@ -28,11 +28,11 @@ $alumno=$consulta->fetch(PDO::FETCH_ASSOC);
 
 $pdf= new FPDF("L","mm",array(337,190));
 $pdf->AddPage();
-$pdf->setFont("Arial","B",16);
+$pdf->setFont("Arial","B",14);
 agregarImagen($pdf,"../src/certificado.jpg",0,0);
-agregarTexto($pdf,ucwords(utf8_decode($alumno['nombre']." ".$alumno['apellidos'])),60,70,'L',"Arial",30,0,84,115);
-agregarTexto($pdf,$alumno['nombre_curso'],-250,115,'C',"Arial",20,0,84,115);
-agregarTexto($pdf,date("d/m/Y"),-350,155,'C',"Arial",11,0,84,115);
+agregarTexto($pdf,ucwords(utf8_decode($alumno['nombre']." ".$alumno['apellidos'])),38,90,'L',"Arial",23,80,30,90);
+agregarTexto($pdf,$alumno['nombre_curso'],-518,120,'C',"Arial",23,80,30,90);
+agregarTexto($pdf,date("d/m/Y"),-542,154,'C',"Arial",23,0,30,90);
 $pdf->Output();
 
 ?>

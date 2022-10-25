@@ -11,7 +11,7 @@
               Gestión de temas
             </div>
             <div class="card-body">
-              <div class="mb-3">
+              <div class="mb-3 d-none">
                 <label for="" class="form-label">Id</label>
                 <!-- Imprime el valor $id almacenado mediante el value-->
                 <input type="text"
